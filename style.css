@@ -1,0 +1,77 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+    h2 {
+        text-align: center;
+    }
+    
+    .container {
+        margin: 50px;
+        max-width: 1669px;
+        min-width: 150px;
+        position: absolute;
+    }
+    
+    .row>div {
+        padding: 0px;
+        margin: 15px;
+        border: 2px solid black;
+        background-color: gray;
+    }
+    
+    .chick {
+        background-color: #d59898;
+    }
+    
+    .be {
+        background-color: #c14543;
+    }
+    
+    .sus {
+        background-color: #e5d198;
+    }
+    
+    button {
+        width: 24%;
+        height: 35px;
+        margin-left: 76%;
+    }
+    
+    p {
+        padding-left: 5%;
+        padding-bottom: 0%;
+        font-size: 18px;
+    }
+    
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    /*Desktop*/
+    
+    @media(min-width: 992px) {
+        .grid-item {
+            flex-basis: 26.67%;
+        }
+    }
+    /*tablet*/
+    
+    @media(max-width: 991px) {
+        .grid-item {
+            flex-basis: 33.33%;
+        }
+    }
+    /*mobile*/
+    
+    @media(max-width: 767px) {
+        .grid-item {
+            flex-basis: 80%;
+        }
+    }
